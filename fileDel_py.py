@@ -38,6 +38,6 @@ def Del():
     dir6 = "/home/xiaob6/dehaze/dehazenet/HazeImages/TestImages "  # test haze
     rmlist = ListFilesToTxt1(dir3)
     objlist = ListFilesToTxt2(dir4)
-    DelFilesFromList(dir2, rmlist, objlist)
+    DelFilesFromList(dir3, rmlist, objlist)
 
 Del()
