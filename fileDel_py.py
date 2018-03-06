@@ -30,14 +30,14 @@ def DelFilesFromList(dir2, rmlist, objlist):
 #            print('Done')
 
 def Del():
-    dir1 = "D:/GitHub_repo/fileDel/2014"
-    dir2 = "D:/GitHub_repo/fileDel/2014_del"
+    dir1 = "D:/GitHub_repo/fileDel - 副本/2014_del"
+    dir2 = "D:/GitHub_repo/fileDel - 副本/2014"
     dir3 = "/home/xiaob6/dehaze/dehazenet/ClearImages/TrainImages/clear_images" #training clear
     dir4 = "/home/xiaob6/dehaze/dehazenet/HazeImages/TrainImages/OTS"  # training haze
     dir5 = "/home/xiaob6/dehaze/dehazenet/ClearImages/TestImages "  # test clear
     dir6 = "/home/xiaob6/dehaze/dehazenet/HazeImages/TestImages "  # test haze
     rmlist = ListFilesToTxt1(dir3)
     objlist = ListFilesToTxt2(dir4)
-    DelFilesFromList(dir3, rmlist, objlist)
+    DelFilesFromList(dir4, rmlist, objlist)
 
 Del()
