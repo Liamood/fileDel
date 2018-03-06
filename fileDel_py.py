@@ -23,15 +23,18 @@ def DelFilesFromList(dir2, rmlist, objlist):
     os.chdir(dir2)
     files = os.listdir(dir2)
     dic = dict(zip(files, objlist))
+    count = 1
     for dickey, dicvalue in dic.items():
         if dicvalue in rmlist:
             print("Will delete this file:" ,dickey)
+            count = count +1
 #            os.remove(dickey)
 #            print('Done')
+    print("Info: %d items to be delete in this directory." %count)
 
 def Del():
-    dir1 = "D:/GitHub_repo/fileDel/2014_del"
-    dir2 = "D:/GitHub_repo/fileDel/2014"
+    dir1 = "D:/GitHub_repo/fileDel/2014"
+    dir2 = "D:/GitHub_repo/fileDel/2014_del"
     dir3 = "/home/xiaob6/dehaze/dehazenet/ClearImages/TrainImages/clear_images" #training clear
     dir4 = "/home/xiaob6/dehaze/dehazenet/HazeImages/TrainImages/OTS"  # training haze
     dir5 = "/home/xiaob6/dehaze/dehazenet/ClearImages/TestImages "  # test clear
